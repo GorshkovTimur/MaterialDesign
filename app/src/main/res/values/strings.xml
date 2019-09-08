@@ -18,4 +18,5 @@
     <string name="edit_text_hint">Input your name</string>
     <string name="snack_message">Say helllo to my little friend</string>
     <string name="close_snack">Close</string>
+    <string name="edit_text_error">String is empty</string>
 </resources>
