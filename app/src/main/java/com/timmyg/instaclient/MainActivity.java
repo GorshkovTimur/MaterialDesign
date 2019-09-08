@@ -45,6 +45,21 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        initSnackbar();
+
+    }
+
+    private void initSnackbar() {
+        View view = findViewById(R.id.coordinator_layout);
+        final Snackbar snackbar = Snackbar.make(view, R.string.snack_message, Snackbar.LENGTH_SHORT);
+        snackbar.setAction(R.string.close_snack, new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                snackbar.dismiss();
+            }
+        });
+        snackbar.show();
     }
 
     @Override
