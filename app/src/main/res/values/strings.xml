@@ -19,4 +19,6 @@
     <string name="snack_message">Say helllo to my little friend</string>
     <string name="close_snack">Close</string>
     <string name="edit_text_error">String is empty</string>
+    <string name="text_button_yes">YES</string>
+    <string name="text_button_no">NO</string>
 </resources>
