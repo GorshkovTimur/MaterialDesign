@@ -20,13 +20,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
+    private ImageView imageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        imageView = findViewById(R.id.image_main);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -45,6 +50,21 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        initSnackbar();
+
+    }
+
+    private void initSnackbar() {
+        View view = findViewById(R.id.coordinator_layout);
+        final Snackbar snackbar = Snackbar.make(view, R.string.snack_message, Snackbar.LENGTH_SHORT);
+        snackbar.setAction(R.string.close_snack, new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                snackbar.dismiss();
+            }
+        });
+        snackbar.show();
     }
 
     @Override
@@ -85,19 +105,19 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_tools) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        switch (id) {
+            case (R.id.menu_fruits):
+                imageView.setImageResource(R.drawable.ic_menu_gallery);
+                break;
+            case (R.id.menu_vegetables):
+                imageView.setImageResource(R.drawable.ic_menu_camera);
+                break;
+            case (R.id.menu_environment):
+                imageView.setImageResource(R.drawable.ic_menu_slideshow);
+                break;
         }
+
+
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
