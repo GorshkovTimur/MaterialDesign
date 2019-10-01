@@ -128,4 +128,6 @@
     <string name="button3">Italy</string>
     <string name="button4">Austria</string>
     <string name="button5">Spain</string>
+    <string name="purple_theme">PURPLE</string>
+    <string name="green_theme">GREEN</string>
 </resources>
