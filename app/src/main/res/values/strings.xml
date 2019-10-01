@@ -123,4 +123,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="button1">Germany</string>
+    <string name="button2">France</string>
+    <string name="button3">Italy</string>
+    <string name="button4">Austria</string>
+    <string name="button5">Spain</string>
 </resources>

@@ -12,7 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.MenuItem;
-import android.widget.TextView;
 
 public class BottomActivity extends AppCompatActivity {
 
@@ -53,4 +52,12 @@ public class BottomActivity extends AppCompatActivity {
                 .commit();
     }
 
+    public static class ButtonActivity extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_button_lesson8);
+        }
+    }
 }

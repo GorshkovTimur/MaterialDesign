@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ButtonActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="@string/button1"/>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="@string/button2"/>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="@string/button3"/>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="@string/button4"/>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:text="@string/button5"/>
+
+
+
+</LinearLayout>

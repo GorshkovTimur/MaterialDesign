@@ -26,4 +26,14 @@
 
     <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccentLight</item>
+        <item name="android:textSize">@dimen/textsize</item>
+        <item name="android:background">@drawable/flat_button</item>
+    </style>
+
+    <dimen name="textsize">14dp</dimen>
 </resources>

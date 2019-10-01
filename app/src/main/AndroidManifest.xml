@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name="ButtonActivity"></activity>
         <activity
             android:name=".BottomActivity"
             android:label="@string/title_activity_bottom">
@@ -17,17 +18,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".TabActivity"
             android:label="@string/title_activity_tab"
-            android:theme="@style/NoActionBar">
-        </activity>
+            android:theme="@style/NoActionBar"></activity>
         <activity
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/NoActionBar"></activity>
+            android:theme="@style/NoActionBar" />
         <activity android:name=".ToolbarActivity" />
         <activity
             android:name=".MainActivity"
